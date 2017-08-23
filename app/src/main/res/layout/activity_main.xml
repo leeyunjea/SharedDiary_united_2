@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF5E6">
+
+    <TextView
+        android:id="@+id/join"
+        android:text="회원가입|고객지원"
+        android:textColor="#8f8a8a"
+        android:background="#FDF5E6"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MyDiary"
+        android:textColor="#FFA8A5"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textSize="40dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/useridLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="UserId: "
+            android:textColor="#FFA8A5"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/useridEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/useridLabel"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/useridLabel" />
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/useridLabel"
+            android:paddingTop="22dp"
+            android:text="Password: "
+            android:textColor="#FFA8A5"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/passwordEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/passwordLabel"
+            android:layout_alignBaseline="@+id/passwordLabel"
+            android:inputType="textPassword"
+            android:hint="비밀번호를 입력하세요.."
+            android:layout_marginLeft="4dp"/>
+        <TextView
+            android:id="@+id/groupCodeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:text="GroupCode: "
+            android:textColor="#FFA8A5"
+            android:textSize="18dp"
+            android:layout_below="@+id/passwordLabel"/>
+        <EditText
+            android:id="@+id/groupCodeEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/groupCodeLabel"
+            android:layout_alignBaseline="@+id/groupCodeLabel"
+            android:hint="그룹코드를 입력하세요.."
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/groupPwLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:text="GroupPw: "
+            android:textColor="#FFA8A5"
+            android:textSize="18dp"
+            android:layout_below="@+id/groupCodeLabel"/>
+        <EditText
+            android:id="@+id/groupPwEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/groupPwLabel"
+            android:layout_alignBaseline="@+id/groupPwLabel"
+            android:inputType="textPassword"
+            android:hint="그룹패스워드를 입력하세요.."
+            android:layout_marginLeft="4dp"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupPwLabel"
+            android:layout_marginTop="10dp"
+            android:text="로그인"
+            android:background="#FFA8A5"
+            android:gravity="center"/>
+        <CheckBox
+            android:id="@+id/autoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginBtn"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/autoLogin"
+            android:layout_toRightOf="@+id/autoLogin"
+            android:text="잠금모드로 자동로그인"
+            android:layout_marginLeft="4dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
