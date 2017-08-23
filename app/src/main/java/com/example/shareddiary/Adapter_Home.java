@@ -36,8 +36,8 @@ public class Adapter_Home extends BaseAdapter {
     }
 
     @Override
-    public long getItemId(int position) {
-        return position;
+    public long getItemId(int position_a) {
+        return position_a;
     }
 
     @Override
