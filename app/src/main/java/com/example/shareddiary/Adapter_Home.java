@@ -31,8 +31,8 @@ public class Adapter_Home extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int position) {
-        return friendsItems.get(position);
+    public Object getItem(int position_a) {
+        return friendsItems.get(position_a);
     }
 
     @Override
